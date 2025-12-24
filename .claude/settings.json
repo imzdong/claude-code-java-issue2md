@@ -1,0 +1,51 @@
+{
+  "permissions": {
+    "defaultMode": "plan",
+    "allow": [
+      "Read(*.java)",
+      "Read(pom.xml)",
+      "Read(build.gradle*)",
+      "Read(settings.gradle*)",
+      "Read(Makefile)",
+      "Read(README.md)",
+      "Read(CONSTITUTION.md)",
+      "Read(specs/**)",
+      "Grep",
+      "Glob",
+      "LS",
+      "Bash(java:version)",
+      "Bash(mvn:compile:*)",
+      "Bash(mvn:test:*)",
+      "Bash(mvn:package:*)",
+      "Bash(gradle:build:*)",
+      "Bash(gradle:test:*)",
+      "Bash(javac:*)",
+      "Bash(java:fmt:*)",
+      "Bash(spotless:check:*)",
+      "Bash(checkstyle:check:*)",
+      "Bash(spotbugs:check:*)"
+    ],
+    "ask": [
+      "Write",
+      "Edit",
+      "MultiEdit",
+      "Bash(mvn:dependency:get:*)",
+      "Bash(mvn:dependency:tree:*)",
+      "Bash(gradle:dependencies:*)",
+      "Bash(mvn:clean:install)",
+      "Bash(gradle:build --refresh-dependencies)",
+      "Bash(git:add:*)",
+      "Bash(git:commit:*)"
+    ],
+    "deny": [
+      "Read(./.env*)",
+      "Read(*.pem)",
+      "Read(*.key)",
+      "Read(*.jks)",
+      "Read(*.keystore)",
+      "Bash(rm:*)",
+      "Bash(git:push:*)",
+      "WebFetch"
+    ]
+  }
+}
